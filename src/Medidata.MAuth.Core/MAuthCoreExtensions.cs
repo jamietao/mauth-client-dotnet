@@ -203,7 +203,7 @@ namespace Medidata.MAuth.Core
                 var value = keyValue.Length > 1 ? keyValue[1] : null;
 
                 unescapedKeysAndValues[i] = new KeyValuePair<string, string>(
-                    Uri.UnescapeDataString(keyValue[0]), value == null ? null : Uri.UnescapeDataString(keyValue[1]));
+                    Uri.UnescapeDataString(key), value == null ? null : Uri.UnescapeDataString(value));
             }
 
             // sorting and escaping
